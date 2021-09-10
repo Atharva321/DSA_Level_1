@@ -1,3 +1,19 @@
+/*
+===================================
+Input:
+5
+-----------------------------------
+Output:
+*       *       *       *       *
+        *       *       *       *
+                *       *       *
+                        *       *
+                                *
+====================================
+*/
+
+
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,10 +40,11 @@ public class Pattern_4{
     public static void main(String[] args){
        FastScanner s = new FastScanner();
         int n = s.nextInt();
-    /* there is difference between print() and println() the first print will print text without new line and second one will print text with new line*/
-    
-        for (int i = 0; i < n; i++) {
-            for (int j = n; j >=  i; j--) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j < i; j++) {
+                System.out.print("\t");
+            }
+            for(int k=n; k>=i;k--){
                 System.out.print("*\t");
             }
       System.out.println();
