@@ -29,6 +29,8 @@ public class Main{
         for(int val: n2){
             if(map.containsKey(val)){
                 System.out.println(val);
+                //remove from hashmap so that if we get duplicate element again then
+                //it will not print it because it is not present in hashmap due to its removed
                 map.remove(val);
             }
         }
