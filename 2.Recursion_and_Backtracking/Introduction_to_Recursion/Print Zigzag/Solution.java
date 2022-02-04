@@ -8,6 +8,7 @@ public class Main {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         pzz(n);
+        
     }
 
     public static void pzz(int n){
