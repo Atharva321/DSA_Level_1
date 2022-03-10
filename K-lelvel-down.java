@@ -7,7 +7,8 @@
       System.out.println(node.data);
       return;
     }
-
+   
     printKLevelsDown(node.left, k - 1);
+    //recurse
     printKLevelsDown(node.right, k - 1);
   }
