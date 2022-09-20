@@ -139,6 +139,15 @@ public class Main {
 
     public void removeAt(int idx) {
       // write your code here
+      if(idx < 0 || idx >= size){
+        System.out.println("Invalid arguments");
+      }
+      else if(idx == 0){
+        removeFirst();
+      }
+      else if(idx == size - 1){
+        removeLast();
+      }
     }
   }
 
