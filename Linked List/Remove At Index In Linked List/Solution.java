@@ -148,6 +148,14 @@ public class Main {
       else if(idx == size - 1){
         removeLast();
       }
+      else{
+        Node temp = head;
+        for(int i=0; i < idx - 1; i++){
+          temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        size--;
+      }
     }
   }
 
