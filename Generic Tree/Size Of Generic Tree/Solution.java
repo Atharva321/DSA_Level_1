@@ -1,3 +1,6 @@
+// Time  : O(n)
+// Space : O(1)
+
 import java.io.*;
 import java.util.*;
 
@@ -43,7 +46,8 @@ public class Main {
 
     return root;
   }
-  
+
+// size = 0;
   public static int size(Node node){
     // write your code here
       int tree_size = 0;
@@ -52,6 +56,15 @@ public class Main {
         tree_size += child_size;
       }
       return tree_size+1;
+    
+//       if(node != null){
+//         size++;
+//       }
+//       for(Node child: node.children){
+//         size(child);
+//       }
+
+//       return size;
   }
 
   public static void main(String[] args) throws Exception {
