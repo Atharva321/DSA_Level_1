@@ -46,6 +46,19 @@ public class Main {
 
  public static ArrayList<Integer> nodeToRootPath(Node node, int data){
     // write your code here
+   if (node.data == data) {
+      ArrayList < Integer> list = new ArrayList< >();
+      list.add(node.data);
+      return list;
+    }
+    for (Node child : node.children) {
+      ArrayList< Integer> ptc = nodeToRootPath(child, data); 
+      if (ptc.size() > 0) { 
+        ptc.add(node.data);
+        return ptc;
+      }
+    }
+    return new ArrayList< >(); //4
  }
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
