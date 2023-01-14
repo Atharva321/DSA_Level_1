@@ -64,6 +64,17 @@ public class Main {
 
   public static int lca(Node node, int d1, int d2) {
     // write your code here
+    ArrayList<Integer> first = nodeToRootPath(node, d1);
+    ArrayList<Integer> second = nodeToRootPath(node, d2);
+    int i = first.size() - 1;
+    int j = second.size() - 1;
+
+    while(i >= 0 && j >= 0 && first.get(i) == second.get(j)){
+      i--;
+      j--;
+    }
+    
+    return first.get(i + 1);
   }
 
   public static void main(String[] args) throws Exception {
