@@ -1,3 +1,6 @@
+// Time  : 
+// Space : 
+
 public static Node createLeftCloneTree(Node node){
     // write your code here
     if (node == null) {
