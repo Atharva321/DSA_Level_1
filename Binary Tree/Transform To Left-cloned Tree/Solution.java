@@ -1,5 +1,5 @@
-// Time  : 
-// Space : 
+// Time  : O(n)
+// Space : O(1)
 
 public static Node createLeftCloneTree(Node node){
     // write your code here
