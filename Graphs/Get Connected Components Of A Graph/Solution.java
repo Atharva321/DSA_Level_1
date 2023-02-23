@@ -40,10 +40,10 @@ public class Main {
       boolean [] visited = new boolean [vtces];
 
       for(int i=0; i<vtces; i++){
-         ArrayList<Integer> comp = new ArrayList<>();
          // what will you pass
          // -> Pass the total graph the i is a src so traverse throught it
          if(visited[i] == false){   
+            ArrayList<Integer> comp = new ArrayList<>();
             compFinder(graph, visited, i, comp);
             comps.add(comp);
          }
