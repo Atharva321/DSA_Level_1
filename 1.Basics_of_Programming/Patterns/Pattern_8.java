@@ -1,3 +1,6 @@
+// Time  : O(n^2)
+// Space : O(1)
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
