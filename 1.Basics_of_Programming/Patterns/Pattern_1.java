@@ -21,17 +21,18 @@ public class Pattern_1{
 		long nextLong() {
 			return Long.parseLong(next());
 		}
+		
     public static void main(String[] args){
        FastScanner s = new FastScanner();
         int n = s.nextInt();
     /* there is difference between print() and println() the first print will print text without new line and second one will print text with new line*/
     
         for (int i = 0; i < n; i++) {
-      for (int j = 0; j <= i; j++) {
-        System.out.print("*\t");
-      }
-      System.out.println();
-    }
+      		for (int j = 0; j <= i; j++) {
+        		System.out.print("*\t");
+      		}
+      		System.out.println();
+    	}
     } 
 }}
 
