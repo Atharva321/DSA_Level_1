@@ -14,6 +14,7 @@ public static void main(String[] args) throws Exception {
     for(int i = 0; i < n; i++ ){
         nums[i] = scn.nextInt();
     }
+    
     Arrays.sort(nums);
     HashMap<Integer, Integer> hmap = new HashMap<>();
     for(int i = 0; i < n; i++ ){
