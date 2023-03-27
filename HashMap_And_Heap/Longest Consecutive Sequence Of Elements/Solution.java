@@ -21,6 +21,7 @@ public static void main(String[] args) throws Exception {
     for(int i = 0; i < n; i++ ){
         hmap.put(nums[i],i);
     }
+    
     int num = 0, max = 1, start = 0;
     for(int i = 0; i< n; i++){
         if(!hmap.containsKey(nums[i]-1)){
