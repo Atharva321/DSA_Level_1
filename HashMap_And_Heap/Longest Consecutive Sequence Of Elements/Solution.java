@@ -37,6 +37,7 @@ public static void main(String[] args) throws Exception {
             }   
         }
     }
+    
     for(int i = num; i < max+num; i++ ){
         System.out.println(i);
     }
