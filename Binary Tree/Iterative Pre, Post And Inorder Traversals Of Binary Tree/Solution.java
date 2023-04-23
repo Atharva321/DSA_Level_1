@@ -81,7 +81,7 @@ public class Main {
     display(node.left);
     display(node.right);
   }
-
+  
   public static void iterativePrePostInTraversal(Node node) {
     // write your code here
     Pair p = new Pair(node, 0);
@@ -96,6 +96,7 @@ public class Main {
     while(st.size() > 0){
       Pair top =  st.peek();
       if(top.state == 0){
+        // Adding to pre
         pre += top.node.data + " ";
         top.state++;
 
@@ -103,7 +104,9 @@ public class Main {
           Pair left = new Pair(top.node.left, 0);
           st.push(left);
         }
-      } else if(top.state == 1){
+      } 
+      else if(top.state == 1){
+        // Adding to in
         in += top.node.data + " ";
         top.state++;
 
