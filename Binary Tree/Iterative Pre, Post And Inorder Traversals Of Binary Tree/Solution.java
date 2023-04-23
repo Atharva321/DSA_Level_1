@@ -96,7 +96,7 @@ public class Main {
     while(st.size() > 0){
       Pair top =  st.peek();
       if(top.state == 0){
-        // Adding to pre
+        // Adding to PreOrder List.
         pre += top.node.data + " ";
         top.state++;
 
@@ -106,7 +106,7 @@ public class Main {
         }
       } 
       else if(top.state == 1){
-        // Adding to in
+        // Adding to InOrder List.
         in += top.node.data + " ";
         top.state++;
 
@@ -115,6 +115,7 @@ public class Main {
           st.push(right);
         }
       } else {
+        // Adding to PostOrder List.
         post += top.node.data + " ";
         st.pop();
       }
