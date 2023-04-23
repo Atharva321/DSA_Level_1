@@ -1,5 +1,5 @@
 // Time  : O(n)
-// Space : O(n)
+// Space : O(n) [Due to Stack.]
 
 import java.io.*;
 import java.util.*;
