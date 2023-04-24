@@ -54,7 +54,8 @@ public class Main {
 
        System.out.println(comps);
    }
-
+      
+      // DFS
       public static void compFinder(ArrayList<Edge>[] graph, boolean [] visited, int src, ArrayList<Integer> comp){
          visited[src] = true;
 
