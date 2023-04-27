@@ -11,6 +11,7 @@ public class Main {
         HashMap<Character, Integer> map = new HashMap<>();
         char ans = '0';
         int  max = 0;
+        
         for(int i=0; i<str.length(); i++){
             char ch = str.charAt(i);
             if(map.containsKey(ch)){
