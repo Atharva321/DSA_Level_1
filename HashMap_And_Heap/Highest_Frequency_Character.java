@@ -26,6 +26,7 @@ public class Main {
                 map.put(ch, 1);
             }
         }
+        
         System.out.println(ans);
     }
 }
