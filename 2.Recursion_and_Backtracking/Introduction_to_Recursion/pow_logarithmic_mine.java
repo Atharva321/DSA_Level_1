@@ -1,5 +1,5 @@
-Time  : O(logn)
-Space : O(1)
+// Time  : O(logn)
+// Space : O(1)
 
 import java.io.*;
 import java.util.*;
